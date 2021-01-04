@@ -19,7 +19,7 @@ console.log(typeof (person))
 // Now let's use undefined
 var person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
 person = undefined;   // Now both value and type is undefined
-console.log(typeof (person))
+console.log(typeof (person));
 
 // ==	equal to
 // ===	equal value and equal type
