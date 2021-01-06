@@ -9,7 +9,7 @@ var my_boolean = true;
 console.log(my_number, my_string, my_object, my_boolean);
 console.log(typeof (my_number), typeof (my_string), typeof (my_object), typeof (my_boolean));
 console.log(my_object.firstName) //accessing object properties
-console.log(my_object.fullname())
+console.log(my_object.fullname())  //accessing object method
 
 // Interesting properties
 //You can consider it a bug in JavaScript that typeof null is an object. It should be null.
