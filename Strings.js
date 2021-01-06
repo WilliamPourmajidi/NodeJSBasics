@@ -40,3 +40,5 @@ console.log(pos_2)  //returns -1 as it can not find 'was' in the given string
 
 
 
+
+
