@@ -35,4 +35,12 @@ const numbers = ([1, false, 5]).filter(function (item) {
 
 console.log(numbers);  //only returns numeric values of the array
 
-// Shorthand method definition
+// Arrow function - Shorthand method definition with no params
+var my_function_1 = () => {return "Hello World!"}
+console.log(my_function_1())
+
+
+// Arrow function - Shorthand method definition with params
+var my_function_2 = (name) => {return `Hello ${name}!`}
+console.log(my_function_2("William"))
+
