@@ -51,6 +51,13 @@ var substr = string_7.substr(17, 7);
 console.log(substr)   // Android
 
 
+//Converting a String to an Array
+var string_9 = "MAC OS, Windows, Android, iOS ";
+var my_array = string_9.split(",")
+console.log(`I have an array and here it is ${my_array}`)
+console.log(`Here is the type ${typeof (my_array)}`)
+console.log(my_array[0]) //accessing the elements
+
 
 
 
