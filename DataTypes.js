@@ -22,7 +22,18 @@ var person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
 person = undefined;   // Now both value and type is undefined
 console.log(typeof (person));
 
-// ==	equal to
-// ===	equal value and equal type
-// !=	not equal
-// !==	not equal value or not equal type
+// JavaScript Comparison Operators
+var x = 5
+
+console.log(x == 5)  // returns true (equal to)
+console.log(x === 5)  // returns true (equal value and equal type)
+console.log(x == "5")  // returns true
+console.log(x === "5")  // returns false (As they are euqal but not the same type)
+console.log(x != 5 ) //returns false
+console.log(x != "5" ) //returns false
+console.log(x !== "5" ) //returns true (	not equal value OR not equal type -- mind the OR! )
+
+// JavaScript Arrays
+
+
+
