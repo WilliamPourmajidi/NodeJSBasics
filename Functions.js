@@ -24,7 +24,7 @@ var getType = function funName(variable) {
 }
 console.log(getType(3));     // => 'number'
 console.log(getType.name);   // => 'funName'
-console.log(typeof (getType)); // => 'function'
+console.log(typeof (getType) ); // => 'function'
 console.log('Outside the function', typeof funName); // => 'undefined'
 // note that  the variable funName is accessible within function scope, but not outside.
 
@@ -43,4 +43,41 @@ console.log(my_function_1())
 // Arrow function - Shorthand method definition with params
 var my_function_2 = (name) => {return `Hello ${name}!`}
 console.log(my_function_2("William"))
+
+
+//anonymous function with no params
+var first = 10;
+var second = 20;
+
+
+var findBigger = function () {
+    var result;
+    first>second ? result = ["first",first] : result = ["second",second];
+    console.log(result);
+}
+findBigger();
+
+
+
+//anonymous function with params
+
+var findBiggerWithParams = function (firstNum,secondNum) {
+    var result;
+    firstNum>secondNum ? result = ["first number is bigger",firstNum] : result = ["second number is bigger",secondNum];
+    console.log(result);
+}
+findBiggerWithParams(19,24);  // this looks very similar to the scenario that our function has a name
+
+// interesting:  the following statement returns the function itself
+console.log(findBiggerWithParams)
+
+var interesting = (function (a,b){
+    var result;
+    a > b ? result = `a is bigger`: result = `b is bigger`;
+    return result;
+})(10,12);
+
+console.log(interesting)
+// above line calls the variable that holds a function that takes two variables,
+// which are passed to it, outside the () in a secondary () - namely, 100 and 12
 
