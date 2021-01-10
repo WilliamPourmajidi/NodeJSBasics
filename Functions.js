@@ -48,6 +48,12 @@ var my_function_2 = (name) => {
 }
 console.log(my_function_2("William"))
 
+// Another arrow function
+var taxCalculator = (price, taxPercent) => {
+    return price + (price * taxPercent);
+}
+console.log(taxCalculator(100, 0.13));
+
 
 //anonymous function with no params
 var first = 10;
@@ -85,20 +91,17 @@ console.log(interesting)
 // which are passed to it, outside the () in a secondary ()
 
 
-
-
-
 //Immediately invoked functions  - Node automatically invoke them
 // Now let's make it more dynamic - Note that node will automaticall call a function
 
 firstNumber = 50;
 secondNumber = 10;
 
-var findAverage = (function (first,second){
+var findAverage = (function (first, second) {
     var result;
     result = (first + second) / 2;
     return result;
-})(firstNumber,secondNumber);
+})(firstNumber, secondNumber);
 
 console.log(`Average is ${findAverage}`);
 
