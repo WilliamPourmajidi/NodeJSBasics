@@ -1,0 +1,23 @@
+{
+  "name": "nodejsbasics",
+  "version": "0.0.1",
+  "description": "This is a pacakge for testing main functionality of Node.js",
+  "main": "Basics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamPourmajidi/NodeJSBasics.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "JavaScript"
+  ],
+  "author": "William Pourmajidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilliamPourmajidi/NodeJSBasics/issues"
+  },
+  "homepage": "https://github.com/WilliamPourmajidi/NodeJSBasics#readme"
+}
