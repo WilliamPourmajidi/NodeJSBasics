@@ -26,8 +26,6 @@ let result = check_performance(server_logs, (data) => {
   }
 });
 
-
-
 // second example
 
 myNumbers = [1, 2, 3, 4];
@@ -48,8 +46,6 @@ let sum = calcultateArithmatic(myNumbers, () => {
   }
   return totalSum;
 });
-
-
 
 let multiply = calcultateArithmatic(myNumbers, () => {
   let totalMultiply = 1;
