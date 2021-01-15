@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/WilliamPourmajidi/NodeJSBasics/issues"
   },
-  "homepage": "https://github.com/WilliamPourmajidi/NodeJSBasics#readme"
+  "homepage": "https://github.com/WilliamPourmajidi/NodeJSBasics#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }
