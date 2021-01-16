@@ -1,5 +1,4 @@
 // first example
-
 let server_logs = [
   { ServerName: "DHCP Server 1", CPU_USAGE: 50, Mem_Usage: 60 },
   { ServerName: "DHCP Server 2", CPU_USAGE: 81, Mem_Usage: 89 },
@@ -25,37 +24,3 @@ let result = check_performance(server_logs, (data) => {
     );
   }
 });
-
-// second example
-
-myNumbers = [1, 2, 3, 4];
-
-function calcultateArithmatic(data, callback) {
-  if (data) {
-    if (typeof callback === "function") {
-      let callback_result = callback(data);
-      return callback_result;
-    }
-  }
-}
-
-let sum = calcultateArithmatic(myNumbers, () => {
-  let totalSum = 0;
-  for (let i = 0; i < myNumbers.length; i++) {
-    totalSum += myNumbers[i];
-  }
-  return totalSum;
-});
-
-let multiply = calcultateArithmatic(myNumbers, () => {
-  let totalMultiply = 1;
-
-  for (let i = 0; i < myNumbers.length; i++) {
-    totalMultiply *= myNumbers[i];
-  }
-
-  return totalMultiply;
-});
-
-console.log(`Sum is ${sum}`);
-console.log(`Multiply is ${multiply}`);
