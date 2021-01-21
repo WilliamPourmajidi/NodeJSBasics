@@ -94,7 +94,7 @@ console.log(
 myArrayToTest.arrayPrint();
 
 console.log(`------------------- New Array -----------------------`);
-// reduce method
+// reduce method (it runs a function against all the items in the array with the hope to reduce them to one element)
 
 const numbers = [1,-1,2,3];
 let sum = 0;
