@@ -66,7 +66,7 @@ console.log(
 );
 
 console.log(`------------------- New Array -----------------------`);
-
+// map method for arrays (takes a callback function and runs it against all the values in the array)
 var myArrayToTest = [1, 2, 3, 4, 5, 6];
 var myArrayToTestSquared = myArrayToTest.map((item) => {
   return item ** 2;
@@ -83,7 +83,7 @@ console.log(`Here is the new array${myArrayToTestSquared}`);
 console.log(`Here is the new array${myArrayToTestEven}`);
 
 console.log(`------------------- New Array -----------------------`);
-
+// prototype: to add a function to ALL arrays in the current program
 Array.prototype.arrayPrint = function () {
   console.log(`Wow, this is from the newly added function: ${this.length}`);
 };
@@ -92,3 +92,23 @@ console.log(
   `The prototype constructor allows you to add new properties and methods to the Array() object which can be found here : \n  ${Array.prototype.arrayPrint}\n Now, we are calling it \n`
 );
 myArrayToTest.arrayPrint();
+
+console.log(`------------------- New Array -----------------------`);
+// reduce method
+
+const numbers = [1,-1,2,3];
+let sum = 0;
+for (let n of numbers){
+  console.log(n);
+  sum +=n;
+}
+
+console.log(`The sum of the array ${numbers} is ${sum}`);
+
+
+aBetterSum = numbers.reduce((accumulator,currentValue)=> {
+  accumulator += currentValue;
+  return accumulator;
+  })
+
+console.log(aBetterSum);
