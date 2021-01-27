@@ -10,7 +10,7 @@ let server_logs = [
 function check_performance(data, callback) {
   for (let i = 0; i < data.length; i++) {
     if (data[i].CPU_USAGE > 80) {
-      if (typeof callback === "function") {
+      if (typeof callback === "function") {. //sanity check to ensure that what we are passing is really a function
         callback(data[i]);
       }
     }
