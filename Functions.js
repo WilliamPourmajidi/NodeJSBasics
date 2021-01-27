@@ -106,5 +106,12 @@ var findAverage = (function (first, second) {
 console.log(`Average is ${findAverage}`);
 
 
+// shortest possible function n
+
+// response => response.blob()
+// is shorthand for
+// function(response) {
+//   return response.blob();
+// }
 
 
